@@ -15,9 +15,6 @@ dist/
 frontend/node_modules/
 backend/node_modules/
 
-# Package lock files (if you don't want them versioned)
-package-lock.json
-
 # OS-specific files
 .DS_Store
 Thumbs.db

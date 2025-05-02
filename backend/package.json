@@ -4,8 +4,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo 'Add tests here'",
-    "lint": "eslint .",
-    "prepare": "husky install"
+    "lint": "eslint ."
   },
   "dependencies": {
     "express": "^4.17.1",
