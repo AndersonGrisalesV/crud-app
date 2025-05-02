@@ -1,0 +1,27 @@
+{
+  "name": "crud-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersonGrisalesV/crud-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AndersonGrisalesV/crud-app/issues"
+  },
+  "homepage": "https://github.com/AndersonGrisalesV/crud-app#readme",
+  "devDependencies": {
+    "eslint": "^9.26.0",
+    "eslint-define-config": "^2.1.0",
+    "lint-staged": "^15.5.1"
+  }
+}
