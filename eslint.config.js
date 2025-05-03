@@ -1,5 +1,6 @@
 // eslint.config.js
 const { defineConfig } = require("eslint-define-config");
+const reactPlugin = require("eslint-plugin-react");
 
 module.exports = defineConfig([
   {
@@ -12,9 +13,11 @@ module.exports = defineConfig([
         browser: "readonly",
       },
     },
+    plugins: {
+      react: reactPlugin,
+    },
     rules: {
       "react/prop-types": "off", // Example rule modification
     },
-    plugins: ["react"],
   },
 ]);
