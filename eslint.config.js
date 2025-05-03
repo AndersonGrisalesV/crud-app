@@ -1,6 +1,4 @@
-import { defineConfig } from "eslint-define-config";
-
-export default defineConfig({
+module.exports = {
   languageOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -19,4 +17,4 @@ export default defineConfig({
   rules: {
     "react/prop-types": "off", // Example rule modification
   },
-});
+};
