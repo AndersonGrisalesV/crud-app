@@ -1,20 +1,20 @@
-const { defineConfig } = require("eslint-define-config");
+import { defineConfig } from "eslint/config";
 
-module.exports = defineConfig([
+export default defineConfig([
   {
-    parser: "@babel/eslint-parser", // Use Babel parser to handle JSX syntax
+    parser: "@babel/eslint-parser", // Use Babel ESLint parser
     parserOptions: {
       ecmaVersion: 2020,
-      sourceType: "module", // Set to module to support ES modules
+      sourceType: "module",
       ecmaFeatures: {
-        jsx: true, // Enable JSX parsing
+        jsx: true, // Enable JSX syntax
       },
     },
-    plugins: ["react"], // React plugin for JSX-specific rules
-    extends: ["eslint:recommended", "plugin:react/recommended"], // Enable recommended ESLint and React rules
+    plugins: ["react"], // React plugin for JSX
+    extends: ["eslint:recommended", "plugin:react/recommended"],
     rules: {
-      "react/prop-types": "off", // Disable prop-types rule (optional, based on your preference)
+      "react/prop-types": "off", // Disable prop-types rule if not needed
     },
-    files: ["src/**/*.js"], // Apply this config to all JavaScript files in the src directory
+    files: ["src/**/*.js"], // Apply to JavaScript files in src
   },
 ]);
