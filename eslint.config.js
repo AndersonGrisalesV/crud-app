@@ -1,20 +1,21 @@
-module.exports = {
-  languageOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    globals: {
-      node: "readonly",
-      browser: "readonly",
+import { defineConfig } from "eslint-define-config";
+
+export default defineConfig({
+  overrides: [
+    {
+      files: ["*.js", "*.jsx"],
+      languageOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        globals: {
+          node: "readonly",
+          browser: "readonly",
+        },
+      },
+      rules: {
+        "react/prop-types": "off", // Example rule modification
+      },
+      plugins: ["react"],
     },
-  },
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "prettier", // If you want to integrate Prettier with ESLint
   ],
-  plugins: ["react"],
-  rules: {
-    "react/prop-types": "off", // Example rule modification
-  },
-};
+});
