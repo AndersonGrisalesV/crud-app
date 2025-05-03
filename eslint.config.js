@@ -1,6 +1,6 @@
-import { defineConfig } from "eslint/config";
+const { defineConfig } = require("eslint-define-config");
 
-export default defineConfig([
+module.exports = defineConfig([
   {
     parser: "@babel/eslint-parser", // Use Babel parser to handle JSX syntax
     parserOptions: {
